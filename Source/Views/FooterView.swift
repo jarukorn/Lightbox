@@ -78,9 +78,9 @@ open class FooterView: UIView {
     public init() {
         super.init(frame: CGRect.zero)
         
-        backgroundColor = UIColor.clear
+        backgroundColor = UIColor.white
         let height:CGFloat = 100
-        let ui_header_view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width + 10000, height: height))
+        let ui_header_view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height))
         ui_header_view.backgroundColor = .white
         self.addSubview(ui_header_view)
         
