@@ -231,11 +231,6 @@ open class LightboxController: UIViewController {
     
     override open func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        footerView.subviews.forEach { (view) in
-            if view.tag == 1 {
-                view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height)
-            }
-        }
         coordinator.animate(alongsideTransition: { _ in
             self.configureLayout(size)
         }, completion: nil)
